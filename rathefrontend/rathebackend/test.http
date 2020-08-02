@@ -1,0 +1,50 @@
+POST http://localhost:5000/events/create http/1.1
+Content-Type: application/json
+
+{
+   "eventName":"Lock-and-code",
+   "description":"Online software engineering training and internship",
+   "organizer":"Migrants Solution",
+   "venue":"Java Island",
+   "location":"Remote",
+   "eventDate":"02-08-2020",
+   "eventTime":"14:00 GMT+1"
+}
+###
+POST http://localhost:5000/organizer/signup http/1.1
+Content-Type: application/json
+
+{
+    "fullName": "Jacob B Ashim",
+      "userName": "JHashim",
+      "email": "jhash@mail.com",
+      "password": "jakebashed",
+      "address": "15, falomo ave, 69 street, Wuye"
+}
+###
+POST http://localhost:5000/organizer/signin http/1.1
+Content-Type: application/json
+
+{
+ "email": "jbash@mail.com",  
+ "password": "jakebashed"
+}
+###
+GET  http://localhost:5000/events/ http/1.1
+Content-Type: application/json
+###
+GET  http://localhost:5000/organizer/ http/1.1
+Content-Type: application/json
+###
+POST http://localhost:5000/organizer/addevent http/1.1
+Content-Type: application/json
+
+{
+   "eventName":"Lock-and-code",
+   "description":"Online software engineering training and internship",
+   "organizer":"Migrants Solution",
+   "venue":"Slack",
+   "location":"Remote",
+   "eventDate":"02-08-2020",
+   "eventTime":"14:00 GMT+1"
+}
