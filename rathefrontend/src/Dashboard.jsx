@@ -2,11 +2,7 @@ import React, { Component } from "react";
 import { Grid, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
-//import Avatar from "@material-ui/core/Avatar";
-//import EventCard from "./EventCard";
 import Axios from "axios";
-//import CssBaseline from "@material-ui/core/CssBaseline";
-//import AddIcon from "@material-ui/icons/Add";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 
